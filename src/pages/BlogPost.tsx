@@ -117,7 +117,7 @@ const BlogPost = () => {
 
   if (!currentPost) {
     return (
-      <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 pt-20">
+      <div className="min-h-screen bg-white dark:bg-black text-gray-900 dark:text-gray-100 pt-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
           <h1 className="text-4xl font-bold mb-4">Blog Post Not Found</h1>
           <p className="text-gray-600 dark:text-gray-400 mb-8">The blog post you're looking for doesn't exist.</p>
@@ -142,9 +142,9 @@ const BlogPost = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div className="min-h-screen bg-white dark:bg-black text-gray-900 dark:text-gray-100">
       {/* Header with navigation */}
-      <div className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 pt-20">
+      <div className="bg-white dark:bg-black border-b border-gray-200 dark:border-gray-700 pt-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <Link 
             to="/blog" 
@@ -155,7 +155,7 @@ const BlogPost = () => {
           </Link>
           
           <div className="mb-6">
-            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded-full">
+            <span className="px-3 py-1 bg-gray-100 dark:bg-neutral-800 text-gray-700 dark:text-gray-300 text-sm rounded-full">
               {currentPost.category}
             </span>
           </div>
@@ -183,7 +183,7 @@ const BlogPost = () => {
             
             <button
               onClick={handleShare}
-              className="flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg transition-colors"
+              className="flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-neutral-800 hover:bg-gray-200 dark:hover:bg-neutral-700 rounded-lg transition-colors"
             >
               <Share2 size={16} />
               Share
@@ -206,7 +206,7 @@ const BlogPost = () => {
           {prevPost && (
             <Link
               to={`/blog/${prevPost.slug}`}
-              className="group p-6 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+              className="group p-6 bg-gray-50 dark:bg-neutral-800 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-700 transition-colors"
             >
               <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400 mb-2">
                 <ArrowLeft size={16} />
@@ -221,7 +221,7 @@ const BlogPost = () => {
           {nextPost && (
             <Link
               to={`/blog/${nextPost.slug}`}
-              className="group p-6 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors md:text-right"
+              className="group p-6 bg-gray-50 dark:bg-neutral-800 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-700 transition-colors md:text-right"
             >
               <div className="flex items-center justify-end gap-2 text-gray-600 dark:text-gray-400 mb-2">
                 <span className="text-sm">Next Post</span>

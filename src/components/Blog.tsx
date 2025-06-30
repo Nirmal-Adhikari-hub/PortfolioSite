@@ -56,7 +56,7 @@ const Blog = () => {
           {blogPosts.map((post, index) => (
             <article 
               key={index}
-              className="bg-slate-800/50 backdrop-blur-sm rounded-xl overflow-hidden border border-purple-500/20 hover:border-purple-400/50 transition-all duration-300 hover:scale-105 group cursor-pointer"
+              className="bg-black/50 backdrop-blur-sm rounded-xl overflow-hidden border border-purple-500/20 hover:border-purple-400/50 transition-all duration-300 hover:scale-105 group cursor-pointer"
             >
               <div className="relative overflow-hidden">
                 <img 
