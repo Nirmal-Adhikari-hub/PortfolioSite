@@ -90,7 +90,7 @@ const Blog = () => {
             >
               <div className="p-6">
                 <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-3">
-                  <span className="px-2 py-1 bg-gray-100 dark:bg-neutral-800 rounded-full text-xs">
+                  <span className="px-2 py-1 bg-purple-600/10 text-purple-500 dark:bg-purple-500/20 dark:text-purple-300 border border-purple-500/20 rounded-full text-xs">
                     {post.category}
                   </span>
                   <div className="flex items-center gap-1">
