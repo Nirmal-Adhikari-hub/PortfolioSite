@@ -81,7 +81,7 @@ const Home = () => {
         <meta property="og:description" content="Research blog with insights into diffusion models and AI." />
       </Helmet>
 
-      <div className="min-h-screen bg-white dark:bg-slate-800 text-black dark:text-white">
+  <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
         {/* Hero Section */}
         <section className="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
@@ -115,7 +115,7 @@ const Home = () => {
         </section>
 
         {/* Recent Blog Posts */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
+        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-black">
           <div className="max-w-6xl mx-auto">
             <div className="flex justify-between items-center mb-12">
               <div>
@@ -137,7 +137,7 @@ const Home = () => {
                 <Link
                   key={index}
                   to={`/blog/${post.slug}`}
-                  className="bg-white dark:bg-slate-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 hover:shadow-lg dark:hover:shadow-2xl transition-all duration-300 group"
+                  className="bg-white dark:bg-black border border-gray-200 dark:border-gray-700 rounded-lg p-6 hover:shadow-purple-500/25 dark:hover:shadow-purple-500/25 hover:border-purple-500 dark:hover:border-purple-500 transition-all duration-300 group"
                 >
                   <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-3">
                     <div className="flex items-center gap-1">
@@ -185,7 +185,7 @@ const Home = () => {
 
             <div className="grid md:grid-cols-2 gap-8">
               {recentPublications.map((pub, index) => (
-                <div key={index} className="border border-gray-200 dark:border-gray-700 rounded-lg p-6 hover:shadow-lg dark:hover:shadow-2xl transition-all duration-300">
+                <div key={index} className="border border-gray-200 dark:border-gray-700 rounded-lg p-6 hover:shadow-purple-500/25 dark:hover:shadow-purple-500/25 hover:border-purple-500 dark:hover:border-purple-500 transition-all duration-300">
                   <h3 className="text-xl font-bold mb-3">{pub.title}</h3>
                   <p className="text-gray-600 dark:text-gray-400 mb-2">{pub.authors}</p>
                   <p className="text-gray-600 dark:text-gray-400 font-medium">{pub.venue} ({pub.year})</p>
@@ -196,7 +196,7 @@ const Home = () => {
         </section>
 
         {/* Publication Reviews */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
+        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-black">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Publication Reviews & Commentary</h2>
@@ -207,7 +207,7 @@ const Home = () => {
 
             <div className="space-y-8">
               {publicationReviews.map((review, index) => (
-                <div key={index} className="bg-white dark:bg-slate-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8">
+                <div key={index} className="bg-white dark:bg-black border border-gray-200 dark:border-gray-700 rounded-lg p-8 hover:shadow-purple-500/25 dark:hover:shadow-purple-500/25 transition-shadow">
                   <div className="flex justify-between items-start mb-4">
                     <div>
                       <h3 className="text-xl font-bold mb-2">{review.title}</h3>
@@ -222,7 +222,7 @@ const Home = () => {
                       ))}
                     </div>
                   </div>
-                  <div className="border-l-4 border-gray-300 dark:border-gray-600 pl-4">
+                  <div className="border-l-4 border-purple-500 dark:border-purple-500/80 pl-4">
                     <p className="text-gray-700 dark:text-gray-300 italic leading-relaxed">
                       "{review.myReview}"
                     </p>
@@ -244,7 +244,7 @@ const Home = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white"
+                className="flex-1 px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-black focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white"
               />
               <button className="px-6 py-2 bg-black dark:bg-white text-white dark:text-black rounded-lg font-medium hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors">
                 Subscribe

@@ -58,7 +58,7 @@ const Blog = () => {
   const categories = ['All', 'Theory', 'Tutorial', 'Research', 'Beginner', 'Technical'];
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 pt-20">
+    <div className="min-h-screen bg-white dark:bg-black text-gray-900 dark:text-gray-100 pt-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="py-16 text-center">
@@ -86,11 +86,11 @@ const Blog = () => {
             <Link
               key={index}
               to={`/blog/${post.slug}`}
-              className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg overflow-hidden hover:shadow-lg dark:hover:shadow-2xl hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-300"
+              className="group bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-lg overflow-hidden hover:shadow-lg dark:hover:shadow-2xl hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-300"
             >
               <div className="p-6">
                 <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-3">
-                  <span className="px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-xs">
+                  <span className="px-2 py-1 bg-gray-100 dark:bg-neutral-800 rounded-full text-xs">
                     {post.category}
                   </span>
                   <div className="flex items-center gap-1">
